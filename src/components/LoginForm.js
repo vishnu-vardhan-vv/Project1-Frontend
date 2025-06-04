@@ -16,7 +16,9 @@ export default function LoginForm(){
         event.preventDefault();
         try{
             console.log('Good to go');
-            const res=await axios.post('/api/auth/login',form,{withCredentials: true});
+            // const res=await axios.post('/api/auth/login',form,{withCredentials: true});
+            const res=await axios.post(`${process.env.REACT_APP_API_BASE_URL}/api/auth/login`,form,{withCredentials: true})
+            
             console.log('Loginned successfully');
             setMessage(res.data);
         }

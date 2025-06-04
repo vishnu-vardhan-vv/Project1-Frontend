@@ -42,7 +42,8 @@ export default function RegisterForm(){
         }
         try{
             console.log('Good to go');
-            const res= await axios.post('/api/auth/register',form);
+            // const res= await axios.post('/api/auth/register',form);
+            const res= await axios.post(`${process.env.REACT_APP_API_BASE_URL}/api/auth/register`,form);
             console.log('Registerd successfully');
             setMessage(res.data);
         } 

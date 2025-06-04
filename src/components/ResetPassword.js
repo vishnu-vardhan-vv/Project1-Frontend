@@ -17,7 +17,8 @@ export default function ResetPassword(){
         event.preventDefault();
         try{
             console.log('Good to go');
-            const res=await axios.post(`/api/auth/reset-password/${token}`,{password});
+            // const res=await axios.post(`/api/auth/reset-password/${token}`,{password});
+            const res=await axios.post(`${process.env.REACT_APP_API_BASE_URL}/api/auth/reset-password/${token}`,{password});
             console.log('Password reset completed successfully');
             setMessage(res.data);
         }
