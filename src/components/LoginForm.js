@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import axios from 'axios';
-import './LoginForm.css'
+import './styles/LoginForm.css'
 
 export default function LoginForm(){
     const [form,setForm]=useState({email:'',password:''});
@@ -34,6 +34,12 @@ export default function LoginForm(){
             <input type='email' name='email' placeholder='Email' onChange={handleChange} required/>
             <input type='password' name='password' placeholder='Password' onChange={handleChange} required/>
             <button type='submit'>Login</button>
+            <br/>
+            <br/>
+            <pre>
+                <a href="/forgot-password">Forgot Password?</a>                    <a href="/register">Register</a>
+            </pre>
+            
             <p>{message}</p>
         </form>
     );

@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import axios from 'axios';
-import './RegisterForm.css'
+import './styles/RegisterForm.css'
 
 const roles = ['Buyer', 'Tenant', 'Owner', 'User', 'Admin', 'Content Creator'];
 

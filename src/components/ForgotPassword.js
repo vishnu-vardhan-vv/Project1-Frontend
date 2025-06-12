@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import axios from 'axios';
-import './ForgotPassword.css'
+import './styles/ForgotPassword.css'
 
 export default function ForgotPassword(){
     const [email,setEmail]=useState('');
