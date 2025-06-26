@@ -3,7 +3,6 @@ import axios from 'axios'
 import './styles/ContactUs.css'
 import ReCAPTCHA from "react-google-recaptcha";
 
-// const RECAPTCHA_SITE_KEY = '6Le29VwrAAAAAOqRhlPEj6M-d447ik8romvHg8k2';
 const RECAPTCHA_SITE_KEY ='6Lea5l0rAAAAALGmyxN6KsvCbfIwcU8ieKgNl3G1';
 
 export default function ContactUs(){
