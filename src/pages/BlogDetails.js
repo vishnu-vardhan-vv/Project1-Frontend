@@ -22,9 +22,9 @@ export default function BlogDetails(){
     if (!blog) return <div>Loading...</div>;
     return (
         <div>
-            <h1>{blog.title}</h1>
+            <h3>{blog.title}</h3>
             {/* <p>By {blog.author.name}</p> */}
-            <h2>By {blog.author.email}</h2>            
+            <h4>By {blog.author.email}</h4>            
             <h3 dangerouslySetInnerHTML={{ __html: blog.content }} />
             <hr/>
             <h4>views:{blog.views}</h4>
