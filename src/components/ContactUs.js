@@ -48,11 +48,13 @@ export default function ContactUs(){
                 <option value="Support">Support</option>
                 <option value="Feedback">Feedback</option>
             </select>
-            <textarea name="message" placeholder="Your Message" onChange={handleChange} required/>
-            <ReCAPTCHA
-                sitekey={RECAPTCHA_SITE_KEY}
-                onChange={token => setCaptchaToken(token)}
-                ref={recaptchaRef}
+            <div>
+                <textarea name="message" placeholder="Your Message" onChange={handleChange} required/>
+            </div>
+            <ReCAPTCHA 
+            sitekey={RECAPTCHA_SITE_KEY}
+            onChange={token => setCaptchaToken(token)}
+            ref={recaptchaRef}
             />
             <button type="submit">Submit</button>
             <p>{msg}</p>

@@ -14,13 +14,19 @@ form h2 {
   color: #333;
 }
 
-form pre a{
+form div{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+form div a{
   font-size: 19px;
   text-decoration: none;
   color:black;
 }
 
-form pre a:hover{
+form div a:hover{
   font-size: 19px;
   font-weight: bold;
   color:black;

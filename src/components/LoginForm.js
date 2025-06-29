@@ -68,9 +68,10 @@ export default function LoginForm(){
             <button type='submit'>Login</button>
             <br/>
             <br/>
-            <pre>
-                <a href="/forgot-password">Forgot Password?</a>                    <a href="/register">Register</a>
-            </pre>
+            <div>
+                <a href="/forgot-password">Forgot Password?</a>
+                <a href="/register">Register</a>
+            </div>
             
             <p>{message}</p>
         </form>

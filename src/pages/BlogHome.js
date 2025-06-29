@@ -69,8 +69,10 @@ export default function BlogHome(){
             
             {blogs.map((blog)=> <BlogCard key={blog._id} blog={blog}/>)}            
             {/* <button  onClick={() => setPage(p => p + 1)}>Load More</button> */}
-            <pre>                                   </pre>
-            <button  style={{marginLeft:'700px'}}className='button' onClick={() => setPage((p)=>{return p+1;})}>Next Page</button>
+            <div style={{display:'flex',alignItems:'center',justifyContent:'center'}}>
+                <button  className='button' onClick={() => setPage((p)=>{return p+1;})}>Next Page</button>
+            </div>
+            
         </div>
     );
 }
