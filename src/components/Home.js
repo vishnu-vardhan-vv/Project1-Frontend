@@ -36,6 +36,7 @@ export default function Home(){
                 <Link to='/admin-dashboard' className='button'>Admin Dashboard</Link>
                 
             </nav>
+            <hr/>
             <div>
                 {!user ? (
                 <h4>No logged in user</h4>
@@ -46,6 +47,7 @@ export default function Home(){
                     <h5>Role: {user.role}</h5>
                 </div>
                 )}
+                <hr/>
             </div>
             <Outlet/>
             
